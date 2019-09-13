@@ -5,7 +5,7 @@ client-id: test
 # the secret associated to the 'client' application
 client-secret: 0a7a1cc6-4a86-4e0f-a946-1627f9c3a851
 # the interface definition you wish the proxy to listen, all interfaces is specified as ':<port>', unix sockets as unix://<REL_PATH>|</ABS PATH>
-listen: 0.0.0.0:3000
+listen: 127.0.0.1:3000
 # whether to enable refresh tokens
 enable-refresh-tokens: true
 # the location of a certificate you wish the proxy to use for TLS support
