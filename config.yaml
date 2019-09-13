@@ -18,7 +18,7 @@ redirection-url: https://09d2c5cb.ngrok.io
 # the encryption key used to encode the session state
 encryption-key: AgXa7xRcoClDEU0ZDSH4X0XhL5Qy2Z2j
 # the upstream endpoint which we should proxy request
-upstream-url: http://127.0.0.1:80
+upstream-url: http://localhost:8080/
 # additional scopes to add to add to the default (openid+email+profile)
 scopes:
 - vpn-user
@@ -32,8 +32,6 @@ resources:
   # If all you want is authentication ONLY, simply remove the roles array - the user must be authenticated but
   # no roles are required
   roles:
-  - openvpn:vpn-user
-  - openvpn:prod-vpn
   - test
 - uri: /admin/*
   methods:
