@@ -1,11 +1,11 @@
 # is the url for retrieve the OpenID configuration - normally the <server>/auth/realm/<realm_name>
-discovery-url: http://ip172-18-0-72-bltucg4st49g00eunus0-8080.direct.labs.play-with-docker.com/auth/realms/demo
+discovery-url: http://ip172-18-0-9-blu1l3dtbbe000b5qlm0-8080.direct.labs.play-with-docker.com/auth/realms/demo
 # the client id for the 'client' application
 client-id: test
 # the secret associated to the 'client' application
-client-secret: 214bc81f-26ae-4aab-9530-457dcc4d72ea
+client-secret: 0a7a1cc6-4a86-4e0f-a946-1627f9c3a851
 # the interface definition you wish the proxy to listen, all interfaces is specified as ':<port>', unix sockets as unix://<REL_PATH>|</ABS PATH>
-listen: 127.0.0.1:3000
+listen: 0.0.0.0:3000
 # whether to enable refresh tokens
 enable-refresh-tokens: true
 # the location of a certificate you wish the proxy to use for TLS support
@@ -13,13 +13,12 @@ tls-cert:
 # the location of a private key for TLS
 tls-private-key:
 # the redirection url, essentially the site url, note: /oauth/callback is added at the end
-redirection-url: https://591622d0.ngrok.io
+redirection-url: https://09d2c5cb.ngrok.io
 #securei-cookie: false
 # the encryption key used to encode the session state
 encryption-key: AgXa7xRcoClDEU0ZDSH4X0XhL5Qy2Z2j
 # the upstream endpoint which we should proxy request
-upstream-url: http://172.20.10.5:8080/
-#http://127.0.0.1:80
+upstream-url: http://127.0.0.1:80
 # additional scopes to add to add to the default (openid+email+profile)
 scopes:
 - vpn-user
