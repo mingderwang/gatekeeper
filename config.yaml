@@ -24,7 +24,9 @@ scopes:
 - vpn-user
 # a collection of resource i.e. urls that you wish to protect
 resources:
-- uri: /*
+- uri: /public
+  white-listed: true
+- uri: /inspire/*
   # the methods on this url that should be protected, if missing, we assuming all
   methods:
   - GET
